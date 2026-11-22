@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ModCut — a video editor by bw16-dev</title>
+  <meta name="description" content="ModCut is a Windows video-editing app that makes bold transitions and effects quicker to create. A portfolio project by bw16-dev.">
+  <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+
+  <!-- Social preview (shown when the link is shared) -->
+  <meta property="og:title" content="ModCut — a video editor by bw16-dev">
+  <meta property="og:description" content="Bold transitions and effects, made quicker to create.">
+  <meta property="og:type" content="website">
+
+  <!-- Enables scroll animations only when JavaScript runs (content stays visible without JS) -->
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================ NAVIGATION ============================ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top" aria-label="ModCut, back to top">ModCut</a>
+      <nav class="nav__links" aria-label="Sections">
+        <a href="#showcase">Showcase</a>
+        <a href="#ideas">Ideas</a>
+        <a href="#workflow">AI workflow</a>
+        <a href="#contribution">My role</a>
+        <a href="#story">My story</a>
+      </nav>
+      <a class="btn btn--small" href="https://apps.microsoft.com/detail/9N9L1PCPVXDK?hl=en-us&amp;gl=PL&amp;ocid=pdpshare" target="_blank" rel="noopener">Get the app</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- =============================== HERO =============================== -->
+    <section class="hero" id="top">
+      <p class="eyebrow reveal">A project by bw16-dev</p>
+      <h1 class="hero__title reveal">ModCut</h1>
+      <p class="hero__tagline reveal">Bold edits. Without the busywork.</p>
+      <p class="hero__lead reveal">
+        A video editor for Windows that brings the kind of transitions and effects
+        you see in finished edits within quick reach.
+      </p>
+      <div class="hero__actions reveal">
+        <a class="btn" href="https://apps.microsoft.com/detail/9N9L1PCPVXDK?hl=en-us&amp;gl=PL&amp;ocid=pdpshare" target="_blank" rel="noopener">
+          Get it from the Microsoft Store
+        </a>
+        <a class="link-arrow" href="#showcase">Watch it in action</a>
+      </div>
+    </section>
+
+    <!-- ============================= SHOWCASE ============================= -->
+    <section class="showcase" id="showcase" aria-labelledby="showcase-title">
+      <div class="showcase__head reveal">
+        <p class="eyebrow eyebrow--light">Showcase</p>
+        <h2 class="section-title" id="showcase-title">See ModCut in motion.</h2>
+      </div>
+
+      <!--
+        ╔══════════════════════════════════════════════════════════════════╗
+        ║  APP VIDEO — REPLACE THE PLACEHOLDER HERE                        ║
+        ║                                                                  ║
+        ║  Fill in ONE of the two attributes below. Leave the other "".    ║
+        ║                                                                  ║
+        ║  data-video-file  → path to a video file in this repository,     ║
+        ║                     e.g. "asset%20vid/modcut.mp4"                ║
+        ║                     (write a space in a folder name as %20)      ║
+        ║  data-video-embed → a YouTube or Vimeo link, e.g.                ║
+        ║                     "https://www.youtube.com/watch?v=XXXXXXXX"   ║
+        ║                     (normal share links are converted for you)   ║
+        ║                                                                  ║
+        ║  data-video-poster (optional) → a still image shown before the   ║
+        ║                     file plays, e.g. "assets/video/poster.jpg"   ║
+        ║                                                                  ║
+        ║  While both are empty, the placeholder below is shown.           ║
+        ║  See README.md → "Add your video" for details.                   ║
+        ╚══════════════════════════════════════════════════════════════════╝
+      -->
+      <div class="video-frame reveal"
+           id="app-video"
+           data-video-file="asset%20vid/ModCut_EN_with_captions_v2.mp4"
+           data-video-embed=""
+           data-video-poster=""
+           data-video-title="ModCut app demo">
+
+        <!-- Placeholder: shown until a video is set above -->
+        <div class="video-placeholder" role="img" aria-label="Video placeholder">
+          <span class="video-placeholder__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg>
+          </span>
+          <p class="video-placeholder__title">Your ModCut demo video goes here</p>
+          <p class="video-placeholder__hint">
+            Set <code>data-video-file</code> or <code>data-video-embed</code>
+            on <code>#app-video</code> in <code>index.html</code>.
+          </p>
+        </div>
+      </div>
+
+      <p class="showcase__caption reveal">A look at ModCut in action.</p>
+    </section>
+
+    <!-- ============================ KEY IDEAS ============================= -->
+    <section class="section" id="ideas" aria-labelledby="ideas-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Key ideas</p>
+          <h2 class="section-title" id="ideas-title">Complex looks, fewer steps.</h2>
+          <p class="section-lead">
+            Editors like CapCut and After Effects show how much expressive
+            editing can do. ModCut takes inspiration from that kind of tooling
+            and focuses on one question: how quickly can you get to a finished,
+            polished look?
+          </p>
+        </header>
+
+        <div class="cards">
+          <article class="card reveal">
+            <span class="card__index">01</span>
+            <h3 class="card__title">Effects made approachable</h3>
+            <p>
+              Effects that usually take careful, manual work are designed to be
+              quicker to set up, so more of the time goes into the edit itself.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__index">02</span>
+            <h3 class="card__title">Transitions inspired by real edits</h3>
+            <p>
+              ModCut's transitions were modelled on examples from finished edits.
+              The goal: let users create that style of transition quickly,
+              instead of rebuilding it by hand every time.
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__index">03</span>
+            <h3 class="card__title">Describe the style you want</h3>
+            <p>
+              A downloadable, pre-existing AI model helps interpret short requests,
+              such as “presentation”, and turn them into results in the intended
+              visual style.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ AI WORKFLOW =========================== -->
+    <section class="section section--alt" id="workflow" aria-labelledby="workflow-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">AI workflow</p>
+          <h2 class="section-title" id="workflow-title">Built through iteration.</h2>
+          <p class="section-lead">
+            ModCut was developed with Claude Code and another AI coding agent.
+            My job was to set the direction, explain what “right” looks like,
+            and keep refining until the results matched the vision.
+          </p>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num">1</span>
+            <h3 class="step__title">Vision</h3>
+            <p>Define what a feature should feel like for the person editing.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">2</span>
+            <h3 class="step__title">Prompts &amp; examples</h3>
+            <p>Write prompts and show reference examples so the AI tools know the target.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">3</span>
+            <h3 class="step__title">Review &amp; test</h3>
+            <p>Run the result, compare it with the intent, and note what is off.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">4</span>
+            <h3 class="step__title">Feedback</h3>
+            <p>Give specific feedback, combine good AI suggestions with my own ideas, and repeat.</p>
+          </li>
+        </ol>
+
+        <div class="cases">
+          <article class="case reveal">
+            <p class="case__label">Case study</p>
+            <h3 class="case__title">Recreating transitions from examples</h3>
+            <p>
+              I wanted complex transitions to be quick to create. I showed the AI
+              examples of transitions taken from finished edits and guided it,
+              step by step, toward recreating similar transitions in ModCut.
+              Each version was reviewed against the reference until it captured
+              the style, so users can now create that kind of transition quickly.
+            </p>
+          </article>
+
+          <article class="case reveal">
+            <p class="case__label">Case study</p>
+            <h3 class="case__title">Tuning how the AI model reads requests</h3>
+            <p>
+              ModCut uses a downloadable, pre-existing AI model. I did not train
+              it. I guided Claude Code in configuring it so that a request like
+              “presentation” is interpreted in the visual style I intended.
+              Getting there took repeated rounds of testing and feedback before
+              the results became genuinely useful.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== MY CONTRIBUTION ========================= -->
+    <section class="section" id="contribution" aria-labelledby="contribution-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">My contribution</p>
+          <h2 class="section-title" id="contribution-title">Who did what.</h2>
+          <p class="section-lead">
+            ModCut was a collaboration between me and AI tools. Here is an
+            honest breakdown of the roles.
+          </p>
+        </header>
+
+        <div class="split">
+          <div class="split__col split__col--primary reveal">
+            <h3 class="split__title">My role</h3>
+            <ul class="checklist">
+              <li><strong>Product vision.</strong> Came up with the idea for ModCut and what it should be.</li>
+              <li><strong>Workflow design.</strong> Decided how features should work for the person editing.</li>
+              <li><strong>Direction.</strong> Wrote the prompts and chose the reference examples.</li>
+              <li><strong>Testing &amp; review.</strong> Tested results and judged whether they met the goal.</li>
+              <li><strong>Decisions.</strong> Combined my ideas with AI suggestions and chose what to keep.</li>
+            </ul>
+          </div>
+
+          <div class="split__col reveal">
+            <h3 class="split__title">The AI tools' role</h3>
+            <ul class="checklist checklist--muted">
+              <li><strong>Claude Code and another AI agent</strong> carried out the development work based on my prompts and feedback.</li>
+              <li>They also <strong>proposed suggestions</strong>, some of which I adopted into the final design.</li>
+              <li>The in-app AI model is a <strong>pre-existing, downloadable model</strong>, configured for ModCut, not trained by me.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== STORY =============================== -->
+    <section class="section section--alt story" id="story" aria-labelledby="story-title">
+      <div class="container story__inner">
+        <header class="section-head reveal">
+          <p class="eyebrow">My story</p>
+          <h2 class="section-title" id="story-title">How My Vibe Coding Journey Started</h2>
+        </header>
+
+        <div class="story__body">
+          <p class="story__lead reveal">
+            About three years ago, when I was 13, I was learning Unity. I made
+            my first game by following a tutorial, without knowing how to code yet.
+          </p>
+
+          <p class="reveal">
+            Later, I discovered that ChatGPT could help write code, so I started
+            experimenting with it on my own projects. It was far from smooth.
+            The code often had bugs or didn't work the way I expected.
+          </p>
+
+          <p class="reveal">
+            So I learned through trial and error. I practised explaining my ideas
+            more clearly, testing what came back, spotting what was wrong, and
+            guiding the AI step by step toward what I had in mind. Sometimes I
+            even worked out how to explain an idea while walking my dog.
+          </p>
+
+          <blockquote class="story__quote reveal">
+            The AI helped write the code. I brought the ideas, the direction,
+            the testing, and the persistence.
+          </blockquote>
+
+          <p class="reveal">
+            I'm not an expert programmer, and I didn't build everything on my own.
+            But over time, I got much better at turning ideas into working projects.
+            That experience is what eventually helped me shape ModCut and guide
+            the development of its AI-powered features.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ FINAL CTA ============================= -->
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="container cta__inner reveal">
+        <h2 class="cta__title" id="cta-title">Try ModCut.</h2>
+        <p class="cta__lead">Available for Windows on the Microsoft Store.</p>
+        <a class="btn btn--large" href="https://apps.microsoft.com/detail/9N9L1PCPVXDK?hl=en-us&amp;gl=PL&amp;ocid=pdpshare" target="_blank" rel="noopener">
+          Download from the Microsoft Store
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__by">
+        Designed and directed by <strong>bw16-dev</strong>
+        <!-- PROFILE LINK (optional): uncomment and add your URL, e.g. GitHub or LinkedIn
+        · <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+        -->
+      </p>
+      <p class="footer__note">
+        ModCut is an independent project. It is not affiliated with or endorsed by
+        Apple, Microsoft, CapCut, or Adobe. Product names are mentioned only for reference.
+      </p>
+      <p class="footer__copy">© <span id="year">2026</span> bw16-dev</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
