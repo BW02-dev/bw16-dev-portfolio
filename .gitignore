@@ -1,0 +1,10 @@
+assets/video/clips/02-sound-captions-templates.jpg
+
+# Never commit video files (GitHub rejects files over 100 MB; the demo lives on YouTube)
+*.mp4
+*.mov
+*.m4v
+*.webm
+*.mkv
+*.avi
+asset vid/
